@@ -1,0 +1,15 @@
+﻿<div class="wrap">
+ <div class="container">
+  <div class="sidebar">
+   <h1 id="in_tit">welcome<h1>
+   <h4><%=notice%></h3>
+ 
+    <%= form_tag '/login/login' , method: :post %>
+     帳號<%=text_field_tag 'account'%>
+      <p></p>
+      密碼<%=password_field_tag 'password'%>
+     <%=submit_tag 'login' , id:"login"%>
+    <%=link_to '註冊' , new_user_path ,id: "reg" %>
+   </div>
+  </div>
+</div>

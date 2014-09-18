@@ -1,0 +1,44 @@
+﻿<h1>Listing books</h1>
+<h3>出版社查詢</h3>
+<%=form_tag '/books/search' , method: :get%>
+ <%=select_tag :item , options_from_collection_for_select(@item,:name,:name)%>
+<%=submit_tag 'go'%>
+<table>
+  <thead>
+    <tr>
+      <th>書名</th>
+      <th>總集數</th>
+      <th>出版社</th>
+      
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @books.each do |book| %>
+      <tr>
+        <td><%= book.name %></td>
+        <td><%= book.ep %></td>
+        <td><%= book.press %></td>
+	  <% if check_user?(book.user) then %>
+        <td><%= link_to 'Show', book %></td>
+		<td><%= link_to 'Edit', edit_book_path(book) %></td>
+        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+	  <% end %>
+    <% end %>
+  </tbody>
+</table>
+<%= will_paginate @books %>
+<br>
+<div id="menu">
+<ul>
+<li><%=link_to '修改密碼' , edit_user_path(@ima)%></li>
+<li><%= link_to '登出', exit_path%></li>
+<li><%= link_to '新增書集', new_book_path %></li>
+</ul>
+</div>
+<p></p>
+

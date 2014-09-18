@@ -1,0 +1,8 @@
+
+<h1 class="sa">search all</h1>
+
+<% @search_item.each do |book| %>
+<%=book.name %>&nbsp;&nbsp; <%=book.ep %><p></p>
+<%end%>
+<%= will_paginate @search_item %>
+<%= link_to 'Back', books_path %>

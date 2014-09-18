@@ -1,0 +1,109 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+body{
+  
+}
+.container{
+ /*background-color:#FF8F59; logb*/
+ background-image:url(a.png);
+ background-repeat: no-repeat;
+ margin-top: 0px;
+ margin-left: 5px;
+ margin-right: 5px;
+ margin-bottom: 0px;
+ height:695px;
+ width:1100px;
+ padding-top: 10px;
+}
+.sidebar{
+ background-color:#FFDAC8; /*login bar*/
+ position: relative;
+ width:325px;
+ height:220px;
+ background: #dddddd;
+ padding-left:10px;
+ padding-top:10px;
+ left:30px;
+ top:20px;
+ border-radius: 10px;
+ border: 2px solid #a1a1a1;
+}
+#reg{
+  position: relative;
+  right:170px;
+  top: 40px;
+  font-family:arial;
+  font-size:50%;
+  color:#796400;
+}
+#login{
+  position: relative;
+  right:185px;
+  top:40px;
+}
+#wrap{
+ height:700px;
+ background-image:url(c.png);
+ background-repeat: no-repeat;
+ background-color:#F0F0F0;/*2bg*/
+ margin-top: 15px;
+ margin-left: 5px;
+ margin-right: 5px;
+}
+#containert{     /*lis bar*/
+ position: relative;
+ height:550px;
+ width: 370px;
+ /*background-color:#66B3FF;*/
+ padding-left:20px;
+ padding-right:0px;
+ left:20px;
+ top:50px;
+ font-family:arial;
+ border-radius: 10px;
+ border: 2px solid #a1a1a1;
+}
+h1{
+ font-size:300%;
+}
+h3{
+ font-size:200%;
+}
+#menu{
+ width:300px;
+ position: relative;
+ background-color:#9F4D95;
+}
+ul li{
+position: relative;
+
+}
+#ad{
+position: relative;
+top:50px;
+}
+.back{
+ position: relative;
+ top:50px;
+ left: 5px;
+ }
+ .Eback{
+ position: relative;
+ top:50px;
+ left: 5px;
+ }
+ h1.sa{
+ position: relative;
+ top:15px;
+ }

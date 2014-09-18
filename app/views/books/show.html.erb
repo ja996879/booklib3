@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @book.name %>
+</p>
+
+<p>
+  <strong>Ep:</strong>
+  <%= @book.ep %>
+</p>
+
+<p>
+  <strong>Press:</strong>
+  <%= @book.press %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>
